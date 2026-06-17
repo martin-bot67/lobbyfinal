@@ -1,0 +1,31 @@
+# ─── lobby-bot Environment Configuration ─────────────────────────────────────
+#
+# Copy this file to .env and fill in your values.
+# NEVER commit the populated .env to version control.
+#
+# ─────────────────────────────────────────────────────────────────────────────
+
+# HTTP port the Express API server will listen on.
+# The Vite dev proxy forwards /api/* to this port.
+PORT=3001
+
+# Your Discord bot token.
+# Found at: https://discord.com/developers/applications → Your App → Bot → Token
+# Required. Server will refuse to start without this.
+DISCORD_TOKEN=your_discord_bot_token_here
+
+# The ID of the Discord server (guild) where voice channels will be created.
+# To get this: Enable Developer Mode in Discord settings, then right-click
+# your server icon and select "Copy Server ID".
+# Required. Server will refuse to start without this.
+GUILD_ID=your_guild_id_here
+
+# (Optional) The ID of a category channel under which new voice channels
+# will be grouped. If omitted, channels are created at the top level of the server.
+# To get this: Enable Developer Mode, right-click any category → "Copy Channel ID".
+CATEGORY_ID=your_category_id_here
+
+# (Optional) Restrict CORS to your frontend's exact origin in production.
+# In development, leave this blank to allow all origins (default *).
+# Example: https://lobby.yourdomain.com
+FRONTEND_ORIGIN=
