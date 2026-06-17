@@ -13,12 +13,21 @@ html, body, #root {
   min-height: 100vh;
 }
 
+html {
+  background-color: #020617;
+  color-scheme: dark;
+}
+
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #020617;
   color: #f8fafc;
+}
+
+#root {
+  background-color: #020617;
 }
 
 ::-webkit-scrollbar {
